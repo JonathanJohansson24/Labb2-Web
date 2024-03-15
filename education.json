@@ -1,0 +1,16 @@
+{
+    "education": [
+        {
+            "school": "Campus Varberg",
+            "status": "Påbörjad hösten 2023 - ",
+            "subject": "Systemutvecklare .NET"
+        }, 
+        {
+            "school": "Falkenbergs Gymnasieskola",
+            "status": "Slutförda studier 2011",
+            "subject": "Samhällsprogrammet inriktning ekonomi"
+        }
+
+        
+    ]
+}

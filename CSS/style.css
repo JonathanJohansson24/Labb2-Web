@@ -1,0 +1,174 @@
+/* MY STYLESHEET FOR NAVBAR HEADER AND FOOTER*/
+
+@font-face{
+    src:    url(../fonts/Roboto-Bold.ttf);
+    font-family: "roboto";
+}
+@font-face{
+    src: url(../fonts/Fredoka-Regular.ttf);
+    font-family: "fredoka";
+}
+*{
+    font-family: fredoka, Arial, Helvetica, sans-serif;
+    
+}
+html, body{
+    height: auto;
+    margin: 0;
+    background-color: #fff;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header {
+    color: hsl(0, 0%, 30%);
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    top: 0;
+    left: 0;
+    z-index: 1000;    
+}
+.header #logo{
+    align-items: left;
+}
+
+
+.header .navbar ul{
+    list-style-type: none;
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    font-style: italic;
+}
+.header .navbar ul li{
+    margin: 0 1.5rem;
+}
+.header .navbar ul li a{
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 65%);
+    text-decoration: none;
+}
+.header .navbar a:hover{
+    color:hsl(0, 0%, 30%)
+}
+.header .navbar a.active{
+    color:hsl(0, 0%, 0%)
+}
+@media screen and (max-width: 600px) {
+    body{
+        font-size: 14px;
+        margin: 0;
+    background-color: #fff;
+    }
+    .start{
+        flex-direction: column;
+    }
+    .header .navbar ul {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .navbar li {
+        display: block;
+        padding-right: 25px;
+        padding-left: 7px;
+        margin: 5px 0; /* Lägger till lite vertikalt utrymme mellan länkarna */
+    }
+
+    .navbar a {
+        display: block;
+        width: 100%;
+        padding: 10px; /* Ökar klickytan för varje länk */
+    }
+    .container .letter{
+        flex-direction: column;
+    }
+    
+}
+.footer{
+    align-items: center;
+    margin-top: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: .3rem;
+    justify-content: space-between;
+}
+.footer a{
+    color: blue;
+    font-size: 2rem;
+}
+/* END OF CSS FOR HEADER NAVBAR AND FOOTER */
+
+.start {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 10rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start .image img{
+    width: 13rem;
+    height: 20rem;
+    border-radius: 50%;
+    padding: .5rem;
+    border: .5rem solid hsl(0, 0%, 80%);
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .3);
+}
+.start .content{
+    padding: 3rem;
+}
+.start .content a{
+    text-decoration:none;
+    font-weight: bold;
+    color: black;
+}
+.start .content a:hover{
+    color:hsl(0, 0%, 70%)
+    
+}
+.container{
+    text-align: center;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+.container .letter{
+    padding: 1rem 3rem;
+    
+}
+
+.container ul{
+    list-style-type: none;
+    
+}
+.container ul li{
+    padding: 2rem 0;
+    font-size: 1.4rem;
+}
+.container ul li i{
+    font-size: 3rem;
+    color: black;
+}
+.container ul li #linked{
+    color: blue;
+}
+.container img{
+    border-radius: 10rem;
+    width: 13rem;
+    height: 8rem;
+}
